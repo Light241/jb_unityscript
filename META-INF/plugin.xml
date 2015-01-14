@@ -29,6 +29,7 @@
         <lang.parserDefinition language="UnityScript" implementationClass="com.unityscript.UnityScriptParserDefinition"/>
         <lang.syntaxHighlighterFactory key="Simple" implementationClass="com.unityscript.UnityScriptSyntaxHighlighterFactory"/>
         <colorSettingsPage implementation="com.unityscript.UnityScriptColorSettingsPage"/>
+        <annotator language="JAVA" implementationClass="com.unityscript.UnityScriptAnnotator"/>
     </extensions>
 
     <application-components>
