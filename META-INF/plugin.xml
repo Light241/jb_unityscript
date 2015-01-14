@@ -26,6 +26,7 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <fileTypeFactory implementation="com.unityscript.UnityScriptFileTypeFactory"/>
+        <lang.parserDefinition language="UnityScript" implementationClass="com.unityscript.UnityScriptParserDefinition"/>
     </extensions>
 
     <application-components>
