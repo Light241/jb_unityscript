@@ -31,6 +31,7 @@
         <colorSettingsPage implementation="com.unityscript.UnityScriptColorSettingsPage"/>
         <annotator language="JAVA" implementationClass="com.unityscript.UnityScriptAnnotator"/>
         <codeInsight.lineMarkerProvider language="JAVA" implementationClass="com.unityscript.UnityScriptLineMarkerProvider"/>
+        <completion.contributor language="UnityScript" implementationClass="com.unityscript.UnityScriptCompletionContributor"/>
     </extensions>
 
     <application-components>
