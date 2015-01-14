@@ -1,0 +1,20 @@
+{
+  parserClass="com.unityscript.parser.UnityScriptParser"
+
+  extends="com.intellij.extapi.psi.ASTWrapperPsiElement"
+
+  psiClassPrefix="UnityScript"
+  psiImplClassSuffix="Impl"
+  psiPackage="com.unityscript.psi"
+  psiImplPackage="com.unityscript.psi.impl"
+
+  elementTypeHolderClass="com.unityscript.psi.UnityScriptTypes"
+  elementTypeClass="com.unityscript.psi.UnityScriptElementType"
+  tokenTypeClass="com.unityscript.psi.UnityScriptTokenType"
+}
+
+unityScriptFile ::= item_*
+
+private item_ ::= (property|COMMENT|CRLF)
+
+property ::= (KEY? SEPARATOR VALUE?) | KEY
