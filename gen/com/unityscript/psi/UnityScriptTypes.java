@@ -16,6 +16,9 @@ public interface UnityScriptTypes {
   IElementType SEPARATOR = new UnityScriptTokenType("SEPARATOR");
   IElementType VALUE = new UnityScriptTokenType("VALUE");
 
+  /*Keywords*/
+  IElementType FLOAT_KEYWORD = new UnityScriptTokenType("FLOAT_KEYWORD");
+
   class Factory {
     public static PsiElement createElement(ASTNode node) {
       IElementType type = node.getElementType();

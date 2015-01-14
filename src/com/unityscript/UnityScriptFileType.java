@@ -28,7 +28,7 @@ public class UnityScriptFileType extends LanguageFileType  {
     @NotNull
     @Override
     public String getDefaultExtension() {
-        return "js";
+        return "ujs";
     }
 
     @Nullable

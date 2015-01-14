@@ -45,3 +45,6 @@ KEY_CHARACTER=[^:=\ \n\r\t\f\\] | "\\"{CRLF} | "\\".
 {WHITE_SPACE}+                                              { yybegin(YYINITIAL); return TokenType.WHITE_SPACE; }
 
 .                                                           { return TokenType.BAD_CHARACTER; }
+
+/* keywords */
+<YYINITIAL> "float" { yybegin(YYINITIAL); return UnityScriptTypes.FLOAT_KEYWORD; }

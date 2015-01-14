@@ -7,6 +7,6 @@ import org.jetbrains.annotations.NotNull;
 public class UnityScriptFileTypeFactory extends FileTypeFactory {
     @Override
     public void createFileTypes(@NotNull FileTypeConsumer fileTypeConsumer) {
-        fileTypeConsumer.consume(UnityScriptFileType.INSTANCE, "js");
+        fileTypeConsumer.consume(UnityScriptFileType.INSTANCE, "ujs");
     }
 }
