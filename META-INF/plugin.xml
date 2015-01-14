@@ -27,6 +27,8 @@
     <extensions defaultExtensionNs="com.intellij">
         <fileTypeFactory implementation="com.unityscript.UnityScriptFileTypeFactory"/>
         <lang.parserDefinition language="UnityScript" implementationClass="com.unityscript.UnityScriptParserDefinition"/>
+        <lang.syntaxHighlighterFactory key="Simple" implementationClass="com.unityscript.UnityScriptSyntaxHighlighterFactory"/>
+        <colorSettingsPage implementation="com.unityscript.UnityScriptColorSettingsPage"/>
     </extensions>
 
     <application-components>
