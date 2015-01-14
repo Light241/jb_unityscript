@@ -1,5 +1,6 @@
 {
   parserClass="com.unityscript.parser.UnityScriptParser"
+  parserUtilClass="com.unityscript.parser.UnityScriptParserUtil"
 
   extends="com.intellij.extapi.psi.ASTWrapperPsiElement"
 
@@ -11,10 +12,12 @@
   elementTypeHolderClass="com.unityscript.psi.UnityScriptTypes"
   elementTypeClass="com.unityscript.psi.UnityScriptElementType"
   tokenTypeClass="com.unityscript.psi.UnityScriptTokenType"
+
+   psiImplUtilClass="com.unityscript.psi.impl.UnityScriptPsiImplUtil"
 }
 
 unityScriptFile ::= item_*
 
 private item_ ::= (property|COMMENT|CRLF)
 
-property ::= (KEY? SEPARATOR VALUE?) | KEY
+property ::= (KEY? SEPARATOR VALUE?) | KEY {methods=[getKey getValue]}
