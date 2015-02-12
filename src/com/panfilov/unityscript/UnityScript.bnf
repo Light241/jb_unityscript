@@ -1,0 +1,23 @@
+{
+  parserClass="com.panfilov.unityscript.parser.UnityScriptParser"
+  parserUtilClass="com.panfilov.unityscript.parser.UnityScriptParserUtil"
+
+  extends="com.intellij.extapi.psi.ASTWrapperPsiElement"
+
+  psiClassPrefix="UnityScript"
+  psiImplClassSuffix="Impl"
+  psiPackage="com.panfilov.unityscript.psi"
+  psiImplPackage="com.panfilov.unityscript.psi.impl"
+
+  elementTypeHolderClass="com.panfilov.unityscript.psi.UnityScriptTypes"
+  elementTypeClass="com.panfilov.unityscript.psi.UnityScriptElementType"
+  tokenTypeClass="com.panfilov.unityscript.psi.UnityScriptTokenType"
+
+   psiImplUtilClass="com.panfilov.unityscript.psi.impl.UnityScriptPsiImplUtil"
+}
+
+unityScriptFile ::= item_*
+
+private item_ ::= (property|COMMENT|CRLF)
+
+property ::= (KEY? SEPARATOR VALUE?) | KEY {methods=[getKey getValue]}
