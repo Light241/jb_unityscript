@@ -26,7 +26,7 @@
         <fileTypeFactory implementation="com.panfilov.unityscript.UnityScriptFileTypeFactory"/>
         <!--<lang.parserDefinition language="UnityScript" implementationClass="com.panfilov.unityscript.UnityScriptParserDefinition"/>-->
         <lang.syntaxHighlighterFactory key="Simple" implementationClass="com.panfilov.unityscript.UnityScriptSyntaxHighlighterFactory"/>
-        <!--<colorSettingsPage implementation="com.panfilov.unityscript.UnityScriptColorSettingsPage"/>-->
+        <colorSettingsPage implementation="com.panfilov.unityscript.UnityScriptColorSettingsPage"/>
         <!--<annotator language="JAVA" implementationClass="com.panfilov.unityscript.UnityScriptAnnotator"/>-->
         <!--<codeInsight.lineMarkerProvider language="JAVA" implementationClass="com.panfilov.unityscript.UnityScriptLineMarkerProvider"/>-->
         <!--<completion.contributor language="UnityScript" implementationClass="com.panfilov.unityscript.UnityScriptCompletionContributor"/>-->
