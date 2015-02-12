@@ -7,7 +7,7 @@ import com.intellij.lang.PsiBuilder.Marker;
 import com.intellij.lang.PsiParser;
 import com.intellij.psi.tree.IElementType;
 
-import static com.panfilov.unityscript.parser.UnityScriptParserUtil.*;
+import static com.intellij.lang.parser.GeneratedParserUtilBase.*;
 import static com.panfilov.unityscript.psi.UnityScriptTypes.*;
 
 @SuppressWarnings({"SimplifiableIfStatement", "UnusedAssignment"})
