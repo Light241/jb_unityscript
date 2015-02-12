@@ -1,4 +1,4 @@
-package com.unityscript;
+package com.panfilov.unityscript;
 
 import com.intellij.lang.Language;
 

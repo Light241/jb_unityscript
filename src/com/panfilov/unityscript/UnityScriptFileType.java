@@ -1,4 +1,4 @@
-package com.unityscript;
+package com.panfilov.unityscript;
 
 import com.intellij.openapi.fileTypes.LanguageFileType;
 import org.jetbrains.annotations.NotNull;
@@ -28,7 +28,9 @@ public class UnityScriptFileType extends LanguageFileType  {
     @NotNull
     @Override
     public String getDefaultExtension() {
+        //TODO S.Panfilov this file type is just for debug reason, shold be "js" after all
         return "ujs";
+        //return "js";
     }
 
     @Nullable
